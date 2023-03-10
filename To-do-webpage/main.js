@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>To Do List</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="main.js">
-</head>
-<body>
-	<div id="myDIV" class="header">
-  <h2>My To Do List</h2>
-  <input type="text" id="myInput" placeholder="Title...">
-  <span onclick="newElement()" class="addBtn">Add</span>
-</div>
-
-<ul id="myUL">
-    <li>excercise</li>
-
-    <li>meet sameera</li>
-
-    <li>Read a book</li>
-
-  </ul>
-
-
-<script type="text/javascript">
-	var myNodelist = document.getElementsByTagName("LI");
+var myNodelist = document.getElementsByTagName("LI");
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
@@ -79,6 +52,3 @@ function newElement() {
     }
   }
 }
-</script>
-</body>
-</html>
